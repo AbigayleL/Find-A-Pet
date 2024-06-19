@@ -3,7 +3,7 @@ import "./Dogs.scss";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function HomePage() {
+function Dogs() {
   const [dogs, setDogs] = useState([]);
   const [cats, setCats] = useState([]);
 
@@ -51,4 +51,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Dogs;
