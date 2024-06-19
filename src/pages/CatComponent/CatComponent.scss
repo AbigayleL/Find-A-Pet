@@ -1,0 +1,46 @@
+.dog-card {
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensure flexbox layout */
+    flex-direction: column; /* Arrange children vertically */
+  }
+  
+  .card-name {
+    padding: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .card-body {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    flex: 1; /* Take remaining space */
+    display: flex; /* Ensure flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  
+    img {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  
+  .card-details {
+    padding: 10px;
+    background-color: #f0f0f0;
+    display: none; /* Initially hidden */
+  }
+  
+  .dog-card.expanded .card-details {
+    display: block; /* Show details when expanded */
+  }
+  

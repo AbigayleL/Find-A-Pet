@@ -2,9 +2,9 @@ import "./Cats.scss";
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import CatComponent from "../CatComponent/CatComponent";
 
-function Dogs() {
-  const [dogs, setDogs] = useState([]);
+function Cats() {
   const [cats, setCats] = useState([]);
 
   useEffect(() => {
@@ -35,20 +35,22 @@ function Dogs() {
 
   return (
     <section className="home-page">
-      <h1>Find Me A Dog</h1>
+      <h1>Find Me A Cat</h1>
       <div className="home-page__pets">
-        <ul>
-          {dogs.map((cat) => (
-            <li key={cat.id}>
-              <h2>{cat.name}</h2>
-              <img src={cat.image.url} alt={cat.name} />
-              {cat.name}
-            </li>
-          ))}
-        </ul>
+        {cats.map((cat) => (
+          <CatComponent
+            key={cat.id}
+            name={cat.name}
+            image={cat.url}
+            bred={cat.bred_for}
+            life={cat.life_span}
+            temperament={cat.temperament}
+            origin={cat.origin}
+          />
+        ))}
       </div>
     </section>
   );
 }
 
-export default Dogs;
+export default Cats;

@@ -1,9 +1,12 @@
+import Hero from "../../components/Hero/Hero";
+import Header from "../../components/Header/Header";
 import "./HomePage.scss";
 
 function HomePage() {
   return (
     <main>
-      <h1 className="hero-heading">Home</h1>
+      <Header />
+      <Hero />
     </main>
   );
 }

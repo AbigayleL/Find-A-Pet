@@ -1,9 +1,9 @@
 import React from "react";
-import "./DogComponent.scss";
+import "./CatComponent.scss";
 
 import { useState, useEffect } from "react";
 
-function DogComponent({ name, image, bred, life, temperament, origin }) {
+function CatComponent({ name, image, bred, life, temperament, origin }) {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -15,9 +15,6 @@ function DogComponent({ name, image, bred, life, temperament, origin }) {
       className={`dog-card ${expanded ? "expanded" : ""}`}
       onClick={toggleExpand}
     >
-      <div className="card-body">
-        <img src={image.url} alt={name} />
-      </div>
       <div className="card-name">
         <h2>{name}</h2>
       </div>
@@ -33,4 +30,4 @@ function DogComponent({ name, image, bred, life, temperament, origin }) {
   );
 }
 
-export default DogComponent;
+export default CatComponent;

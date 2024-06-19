@@ -1,4 +1,5 @@
 import "./Dogs.scss";
+import Cats from "../Cats/Cats";
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -42,8 +43,10 @@ function Dogs() {
             key={dog.id}
             name={dog.name}
             image={dog.image}
-            description={dog.description}
-            facts={dog.facts}
+            bred={dog.bred_for}
+            life={dog.life_span}
+            temperament={dog.temperament}
+            origin={dog.origin}
           />
         ))}
       </div>
