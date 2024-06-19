@@ -1,7 +1,6 @@
 import "./Dogs.scss";
-import Cats from "../Cats/Cats";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import DogComponent from "../DogComponent/DogComponent";
 
@@ -36,7 +35,6 @@ function Dogs() {
 
   return (
     <section className="home-page">
-      <Cats />
       <h1>Find Me A Dog</h1>
       <div className="home-page__pets">
         {dogs.map((dog) => (
