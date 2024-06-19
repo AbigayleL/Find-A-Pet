@@ -1,17 +1,17 @@
-import "./Dogs.scss";
+import "./Cats.scss";
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import DogComponent from "../DogComponent/DogComponent";
 
 function Dogs() {
   const [dogs, setDogs] = useState([]);
+  const [cats, setCats] = useState([]);
 
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const dogResponse = await axios.get(
-          "https://api.thedogapi.com/v1/breeds",
+        const catResponse = await axios.get(
+          "https://api.thecatapi.com/v1/breeds",
           {
             headers: {
               "x-api-key":
@@ -21,7 +21,7 @@ function Dogs() {
         );
 
         // Set state
-        setDogs(dogResponse.data);
+        setCats(catResponse.data);
       } catch (error) {
         console.log("Error encountered, Please try again later.");
       }
@@ -29,7 +29,7 @@ function Dogs() {
     fetchPets();
   }, []);
 
-  if (!dogs) {
+  if (!cats) {
     return <div>Loading...</div>;
   }
 
@@ -37,15 +37,15 @@ function Dogs() {
     <section className="home-page">
       <h1>Find Me A Dog</h1>
       <div className="home-page__pets">
-        {dogs.map((dog) => (
-          <DogComponent
-            key={dog.id}
-            name={dog.name}
-            image={dog.image}
-            description={dog.description}
-            facts={dog.facts}
-          />
-        ))}
+        <ul>
+          {dogs.map((cat) => (
+            <li key={cat.id}>
+              <h2>{cat.name}</h2>
+              <img src={cat.image.url} alt={cat.name} />
+              {cat.name}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

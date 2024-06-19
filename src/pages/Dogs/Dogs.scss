@@ -1,0 +1,10 @@
+.home-page__pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 20px;
+}
