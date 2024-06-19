@@ -1,16 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import "./styles/partials/_globals.scss";
+import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <HomePage />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" index element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
