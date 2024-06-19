@@ -1,3 +1,24 @@
 .hero {
   padding: 2rem;
+  display: flex;
+}
+.hero-cats-dogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero__heading {
+  font-size: 5rem;
+}
+.cat,
+.dog {
+  width: 100px;
+  border-radius: 4px;
+}
+
+.cat {
+  background-color: lightcoral;
+}
+.dog {
+  background-color: burlywood;
 }
