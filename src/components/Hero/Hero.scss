@@ -1,19 +1,25 @@
 .hero {
   padding: 2rem;
   display: flex;
+  justify-content: space-around;
 }
 .hero-cats-dogs {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 .hero__heading {
   font-size: 5rem;
 }
 .cat,
 .dog {
-  width: 100px;
+  width: 300px;
   border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  & h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 
 .cat {
