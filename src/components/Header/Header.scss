@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 4rem;
+  & img {
+    width: 150px;
+  }
+}
+.nav-list {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
