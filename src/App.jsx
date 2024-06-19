@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.scss";
+import "./styles/partials/_globals.scss";
 import Dogs from "./pages/Dogs/Dogs";
 import HomePage from "./pages/HomePage/HomePage";
 
