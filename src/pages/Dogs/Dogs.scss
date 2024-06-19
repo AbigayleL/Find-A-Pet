@@ -8,3 +8,9 @@
   margin-right: 16px;
   gap: 20px;
 }
+.home-page {
+  & h1 {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+}
