@@ -36,6 +36,7 @@ function Dogs() {
 
   return (
     <section className="home-page">
+      <Cats />
       <h1>Find Me A Dog</h1>
       <div className="home-page__pets">
         {dogs.map((dog) => (

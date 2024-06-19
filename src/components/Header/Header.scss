@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.logo {
+  font-size: 4rem;
+  font-family: "Little Paws";
+  font-size: 6rem;
+}
+.nav-list {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
