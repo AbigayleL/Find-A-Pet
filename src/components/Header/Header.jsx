@@ -4,9 +4,8 @@ import logo from "../../assets/logo.png";
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
+      <h1 className="logo">Find me a pet</h1>
+
       <nav className="nav">
         <ul className="nav-list">
           <li className="home">Home</li>
