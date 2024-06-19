@@ -1,9 +1,10 @@
+import Hero from "../../components/Hero/Hero";
 import "./HomePage.scss";
 
 function HomePage() {
   return (
     <main>
-      <h1 className="hero-heading">Home</h1>
+      <Hero />
     </main>
   );
 }
